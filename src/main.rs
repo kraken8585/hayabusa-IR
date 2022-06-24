@@ -134,7 +134,7 @@ impl App {
 
         if !Path::new("./config").exists() {
             AlertMessage::alert(
-                "Hayabusa could not find the config directory.\nPlease run it from the Hayabusa root directory.\nExample: ./hayabusa-1.0.0-windows-x64.exe"
+                "Hayabusa could not find the config directory.\nPlease make sure that it is in the same directory as the hayabusa executable."
             )
             .ok();
             return;
